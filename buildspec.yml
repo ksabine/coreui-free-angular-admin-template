@@ -4,13 +4,13 @@ phases:
   install:
     runtime-versions:
       nodejs: 10
-  build:
+  pre-build:
     commands:
       - npm install
+  build:
       - npm run build
 artifacts:
   files:
     - '/'
-  discard-paths: yes
-  base-directory: 'dist*'
+  base-directory: 'dist/*'
   
