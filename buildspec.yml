@@ -1,9 +1,5 @@
 version: 0.2
-artifacts:
-  files:
-    - '**/*'
-  base-directory: 'dist*'
-  discard-paths: yes
+
 phases:
   install:
     runtime-versions:
@@ -12,3 +8,9 @@ phases:
     commands:
       - npm install
       - npm run build
+artifacts:
+  files:
+    - '/'
+  discard-paths: yes
+  base-directory: 'dist*'
+  
