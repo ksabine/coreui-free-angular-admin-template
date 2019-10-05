@@ -10,5 +10,3 @@ phases:
     commands:
       - npm install
       - npm run build
-
-
